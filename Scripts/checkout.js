@@ -12,7 +12,3 @@ checktable.addEventListener('click', function(e){
     }
   })
 
-
-  .tables ;{
-    display: flex
-  };
