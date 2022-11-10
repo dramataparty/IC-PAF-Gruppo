@@ -5,9 +5,15 @@
         <link rel="stylesheet"
         type="text/css"
         href="Styles/style.css">
+        
         <style>
 
         </style>
+        <script> var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+        })
+        </script>
     </head>
     <body>
         <h1> McBurger </h1>
@@ -20,7 +26,7 @@
                 <a href="#">Outros</a>
                 <a href="#">Check-out</a>
                 <a href="#">Definições</a>
-                <ul>
+                <ul> /* Temos de adicionar como butoes?? */
                     <li>
                         <a href="#" class="active">
                             <span class="icon"><i class="fas fa-home"></i></span>
@@ -65,7 +71,16 @@
                     </li>
                 </ul>
             </div>
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
 
+        </div>
 
 
 
