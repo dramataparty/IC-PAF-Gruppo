@@ -98,6 +98,8 @@ body{
 }
 
 .main .buttons .reser{
+    position: static;
+    padding-top: 5px;
     background-color: #434446;
     border: none;
     color: rgb(255, 255, 255);
@@ -119,6 +121,8 @@ body{
 }
 
 .main .buttons .encom{
+    position: static;
+    padding-top: 5px;
     background-color: #434446;
     border: none;
     color: rgb(255, 255, 255);
@@ -148,6 +152,7 @@ body{
 }
 
 .main .low .histo{
+    padding-top: 5px;
     background-color: #434446;
     border: none;
     color: rgb(255, 255, 255);
