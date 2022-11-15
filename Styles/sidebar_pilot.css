@@ -1,4 +1,3 @@
-
 *{
     list-style: none;
     text-decoration: none;
@@ -8,112 +7,219 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body{
-    background: #f5f6fa;
-}
-
 .wrapper .sidebar{
-    background: rgb(52, 51, 53);
+    background: rgb(49, 49, 49);
     position: fixed;
     top: 0;
     left: 0;
     width: 225px;
     height: 100%;
-    padding: 20px 0;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
-
 .wrapper .sidebar ul li a.active{
+    text-align: left;
     display: block;
-    padding: 40px 30px;
-    border-bottom: 1px inset #10558d;
+    padding: 30px 30px;
+    border-bottom: 0px solid #10558d;
     color: rgb(255, 255, 255);
     font-size: 22px;
     position: relative;
-    bottom: -90px;
-    border-top: 1px inset #10558d;
+    bottom: -140px;
+    border-top: 1px solid #10558d;
 }
 
-.wrapper .sidebar ul li a .icon{
-    color: #dee4ec;
-    width: 30px;
-    display: inline-block;
+.wrapper .sidebar ul li a.inactive{
+    text-align: left;
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(129, 129, 129);
+    font-size: 22px;
+    position: relative;
+    bottom: -140px;
+    border-top: 1px solid #10558d;
 }
 
 .wrapper .sidebar ul li a.active:hover{
     color: #0c7db1;
-
+    text-decoration: underline;
     background:white;
-    border-right: 2px solid rgb(5, 68, 104);
+    border-left: 10px solid rgb(5, 68, 104);
 }
 
-
-
-.wrapper .sidebar ul li a.active:hover{
-    display: block;
-}
-
-.wrapper .section{
-    width: calc(100% - 225px);
-    margin-left: 225px;
-    transition: all 0.5s ease;
-}
-
-.wrapper .section .top_navbar{
-    background: rgb(7, 105, 185);
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-
-}
-
-
-body.active .wrapper .sidebar{
-    left: -225px;
-}
-
-body.active .wrapper .section{
-    margin-left: 0;
-    width: 100%;
+.wrapper .sidebar ul li a.inactive:hover{
+    color: #30b0eb86;
+    text-decoration: underline;
+    background:rgb(100, 100, 100);
+    border-left: 10px solid rgb(5, 68, 104);
+    cursor: not-allowed;
 }
 
 body{
     background: #ffffff;
 }
 
-.wrapper .sidebar{
-    background: rgb(31, 30, 29);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 225px;
-    height: 100%;
-    padding: 20px 0;
-    transition: all 0.5s ease;
+.main{
+    position: static;
+    margin-left: 225px;
 }
 
-.wrapper .sidebar .profile{
-    margin-bottom: 30px;
+.main .buttons{
+    text-align: center;
+    margin: 8px;
+}
+
+.main .title{
+    font-size: 50px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    outline: none;/*dashed 1px #10558d*/
+}
+
+.main .buttons .reser{
+    background-color: #434446;
+    border: none;
+    color: rgb(255, 255, 255);
+    height: 46px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 16px 14px;
+    cursor: pointer;
+}
+
+.main .buttons .reser:hover{
+    color: #3d3838;
+    text-decoration: underline;
+    background:rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.main .buttons .encom{
+    background-color: #434446;
+    border: none;
+    color: rgb(255, 255, 255);
+    height: 46px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 16px 14px;
+    cursor: pointer;
+}
+
+.main .buttons .encom:hover{
+    color: #3d3838;
+    text-decoration: underline;
+    background:rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.main .low{
+    position: relative;
+    bottom: -250px;
+    right: -950px;
+    border: none;
+    margin-right: 950px;
+}
+
+.main .low .histo{
+    background-color: #434446;
+    border: none;
+    color: rgb(255, 255, 255);
+    height: 46px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin:auto;
+    cursor: pointer;
+}
+
+.main .low .histo:hover{
+    color: #3d3838;
+    text-decoration: underline;
+    background:rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.main .artigos {
+    position: relative;
+    bottom: -50px;
+    right: -100px;
+    display: inline-grid;
+    grid-template-areas:
+    'header header header header header header'
+    'item1 item1 item2 item2 item3 item3';
+    background-color: #ffffff;
+    padding: 10px;
+    grid-template-rows: 60px 120px;
+    border: 1px dashed rgb(5, 68, 104);
+}
+
+.main .artigos .grid-item-0 {
+    position: relative;
+    margin-bottom: 0px;
+    grid-area: header;
+    text-decoration: underline;
+    text-decoration-color: #0c7db1;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 2px;
+    font-size: 30px;
     text-align: center;
 }
 
-.wrapper .sidebar .profile img{
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
+.main .artigos .grid-item-1 {
+    grid-area: item1;
+    background-color: rgba(255, 255, 255);
+    border: 0px dashed rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    height: 130px;
+    width: 150px;
+    font-size: 15px;
+    text-align: center;
+}
+.main .artigos .grid-item-2 {
+    grid-area: item2;
+    background-color: rgba(255, 255, 255);
+    border: 0px dashed rgba(0, 0, 0, 0.8);
+    border-left: 1px dashed rgba(0, 0, 0, 0.8);
+    border-right: 1px dashed rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    height: 130px;
+    width: 150px;
+    font-size: 15px;
+    text-align: center;
+}
+.main .artigos .grid-item-3 {
+    grid-area: item3;
+    background-color: rgb(255, 255, 255);
+    border: 0px dashed rgba(0, 0, 0, 0.8);
+    height: 130px;
+    width: 150px;
+    padding: 0px;
+    font-size: 15px;
+    text-align: center;
 }
 
-.wrapper .sidebar .profile h3{
-    color: #ffffff;
-    margin: 10px 0 5px;
+.main .artigos .grid-item-1:hover {
+    background-color: rgb(206, 139, 139);
+    cursor: pointer;
 }
-
-.wrapper .sidebar .profile p{
-    color: rgb(206, 240, 253);
-    font-size: 14px;
+.main .artigos .grid-item-2:hover {
+    background-color: rgb(206, 139, 139);
+    cursor: pointer;
 }
-
+.main .artigos .grid-item-3:hover {
+    background-color: rgb(206, 139, 139);
+    cursor: pointer;
+}
