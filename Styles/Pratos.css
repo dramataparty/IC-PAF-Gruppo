@@ -1,0 +1,81 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #ffffff;
+}
+
+
+
+.wrapper .sidebar{
+    background: rgb(49, 49, 49);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.wrapper .sidebar ul li a.active{
+    text-align: left;
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 0px solid #10558d;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    position: relative;
+    bottom: -140px;
+    border-top: 1px solid #10558d;
+}
+
+.wrapper .sidebar ul li a.inactive{
+    text-align: left;
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(129, 129, 129);
+    font-size: 22px;
+    position: relative;
+    bottom: -140px;
+    border-top: 1px solid #10558d;
+}
+
+.wrapper .sidebar ul li a.active:hover{
+    color: #0c7db1;
+    text-decoration: underline;
+    background:white;
+    border-left: 10px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a.inactive:hover{
+    color: #30b0eb86;
+    text-decoration: underline;
+    background:rgb(100, 100, 100);
+    border-left: 10px solid rgb(5, 68, 104);
+    cursor: not-allowed;
+}
+
+/* Botão ativo */
+.wrapper .sidebar ul li a.active1{
+    text-align: left;
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 0px solid #10558d;
+    color: #0c7db1;
+    font-size: 22px;
+    position: relative;
+    bottom: -140px;
+    border-top: 1px solid #10558d;
+    text-decoration: underline;
+    background:white;
+    border-left: 10px solid rgb(5, 68, 104);
+}
+
+
