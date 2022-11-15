@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
+ 
 .wrapper .sidebar{
     background: rgb(49, 49, 49);
     position: fixed;
@@ -55,6 +55,24 @@
     border-left: 10px solid rgb(5, 68, 104);
     cursor: not-allowed;
 }
+
+/* Botão ativo */
+.wrapper .sidebar ul li a.active1{
+    text-align: left;
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 0px solid #10558d;
+    color: #0c7db1;
+    font-size: 22px;
+    position: relative;
+    bottom: -140px;
+    border-top: 1px solid #10558d;
+    text-decoration: underline;
+    background:white;
+    border-left: 10px solid rgb(5, 68, 104);
+}
+
+
 
 body{
     background: #ffffff;
