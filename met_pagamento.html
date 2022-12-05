@@ -4,9 +4,12 @@
 </head>
 <body>
 
-<button id="linkbalc">No balcão</button>
-<button id="linkcart">Com cartão de crédito</button>
+<button id="linkbalc" link= "checkout.html">No balcão</button>
+<button id="linkcart" link= "checkout.html">Com cartão de crédito</button>
 <!-- linka a um popup que pede info do cartão de crédito-->
-<button id="linkmbway">Com MBWay</button>
-<!-- linka a um popup que gera um qrcode-->
+<button id="linkmbway" onclick="QrCode()">Com MBWay</button>
+    <div id="qrcode"></div>
+    <script type="text/javascript">
+    new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+    </script>
 </body>
