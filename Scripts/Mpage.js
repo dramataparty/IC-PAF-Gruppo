@@ -6,7 +6,7 @@ function currpedido_pedido() {
     if (currpedido == null){
         currpedido = [];
     }
-    var artitle = document.getElementById("item")
+    var artitle = document.getElementById("grid-item")
     currpedido.push(artitle);    
 };
 
