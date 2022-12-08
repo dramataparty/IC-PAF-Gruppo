@@ -24,3 +24,50 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
+
+body{
+    background-color: beige;
+}
+
+#popup{
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: black 1px;
+    align-items: flex-start;
+}
+
+#popup img{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#popup #close{
+    width: 20px;
+    height: 20px;
+}
+
+#popup #foodimage{
+    position: absolute;
+    min-width: 200px;
+    min-height: 200px;
+    top: 0px;
+    left: 0px;
+}
+
+#popup p{
+    align-self: center;
+    margin-left: 200px;
+}
+
+#popup #closeimage{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+}
