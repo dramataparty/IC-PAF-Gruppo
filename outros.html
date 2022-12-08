@@ -30,14 +30,25 @@
                 <!--Meter isto nas outras paginas -->
             </div>
             <div class="artigos">
-                <button id="grid-item" id="pratos"> <img src="Styles/Imgs/cafe.png" alt="Coffee" width="180" height="150"> 
+                <button id="grid-item" onclick="coffeeInfo()" id="pratos"> <img src="Styles/Imgs/cafe.png" alt="Coffee" width="180" height="150"> 
                     <p id="nome">Café</p>
                 </button>
-                <button id="grid-item" id="bebidas"> <img src="Styles/Imgs/jack.png" alt="Drink" width="120" height="200">
+                <button id="grid-item" onclick="whiskeyInfo()" id="bebidas"> <img src="Styles/Imgs/jack.png" alt="Drink" width="120" height="200">
                     <p id="nome">Jack Daniel's</p>
                 </button>
             </div>
         </div>
+        <form id="frmEncomenda">
+            <div id="outros1">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade1" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="outros2">
+                <label for="numQuantidade" >Quantidade</label>
+                <input id="numQuantidade2" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+        </form>
+        <button id="adicionaCarrinho" type="button">Adiconar ao carrinho</button>
       <div class="wrapper">
         <div class="sidebar">
             <ul>

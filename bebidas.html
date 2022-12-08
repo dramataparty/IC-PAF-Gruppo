@@ -13,7 +13,7 @@
             </div>
             <div class="content_filters"> 
 
-                <input type="checkbox" id = "botao_nacional" onclick="filterSelection('nacional')">>
+                <input type="checkbox" id = "botao_nacional" onclick="filterSelection('nacional') ">
                 <label for="botao_nacional"> Produto Nacional </label>
 
                 <input type="checkbox" id = "botao_samend" onclick="filterSelection('s_amend')">
@@ -30,38 +30,100 @@
                 <!--OnClick() mudam o display para ter só os elementos que pertencem á devida categoria-->
                 <!--Meter isto nas outras paginas -->
             </div>
+            <form id="frmEncomenda">
+                <div id="bebida1">
+                    <label for="numQuantidade">Quantidade</label>
+                    <input id="numQuantidade1" type="number" name="quantidade" value="0" min="0" max="9">
+                </div>
+                <div id="bebida2">
+                    <label for="numQuantidade" >Quantidade</label>
+                    <input id="numQuantidade2" type="number" name="quantidade" value="0" min="0" max="9">
+                </div>
+                <div id="bebida3">
+                    <label for="numQuantidade">Quantidade</label>
+                    <input id="numQuantidade3" type="number" name="quantidade" value="0" min="0" max="9" >
+                </div>
+            </form>
+
             <div class="artigos">
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/water.png" alt="agua" width="140" height="190"> 
+                <button id="grid-item"  onclick="waterInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/water.png" alt="agua" width="140" height="190"> 
                     <p id="nome">Água</p>
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/glass-with-orange-juice-png-0.png" alt="Sumo" width="150" height="240">
+                <button id="grid-item"  onclick="orangeJuiceInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/glass-with-orange-juice-png-0.png" alt="Sumo" width="150" height="240">
                     <p id="nome">Sumo de Laranja</p>
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/arando.png" alt="Sumo" width="230" height="240"> 
+                <button id="grid-item" onclick="redFruitsJuiceInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/arando.png" alt="Sumo" width="230" height="240"> 
                     <p id="nome">Sumo de Arando</p> 
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/cola.png" alt="Sumo" width="80" height="230"> 
+                <button id="grid-item" onclick="cocacolaInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/cola.png" alt="Sumo" width="80" height="230"> 
                     <p id="nome">Coca-Cola</p>
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/fanta.png" alt="Sumo" width="230" height="230">
+                <button id="grid-item" onclick="fantaInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/fanta.png" alt="Sumo" width="230" height="230">
                     <p id="nome">Fanta</p>
                 </button>
                 <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/sprite.png" alt="Bacalhau" width="80" height="225"> 
                     <p id="nome">Sprite</p> 
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/limonada.png" alt="Sumo" width="250" height="250"> 
+                <button id="grid-item" onclick="lemonadeInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/limonada.png" alt="Sumo" width="250" height="250"> 
                     <p id="nome">Limonada</p> 
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/lipton.png" alt="Sumo" width="120" height="225"> 
+                <button id="grid-item" onclick="iceTeaInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/lipton.png" alt="Sumo" width="120" height="225"> 
                     <p id="nome">Lipton</p>
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/redwine.png" alt="Sumo" width="90" height="210">
+                <button id="grid-item" onclick="wineInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/redwine.png" alt="Sumo" width="90" height="210">
                     <p id="nome">Vinho Tinto</p>
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/uva.png" alt="Sumo" width="115" height="220"> 
+                <button id="grid-item" onclick="grapeJuiceInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/uva.png" alt="Sumo" width="115" height="220"> 
                     <p id="nome">Sumo de Uva</p>
                 </button>
             </div>
+        </div>
+        
+        <form id="frmEncomenda">
+            <div id="bebida1">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade1" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="bebida2">
+                <label for="numQuantidade" >Quantidade</label>
+                <input id="numQuantidade2" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="bebida3">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade3" type="number" name="quantidade" value="0" min="0" max="9" >
+            </div>
+        </form> 
+
+        <form id="frmEncomenda">
+            <div id="bebida4">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade1" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="bebida5">
+                <label for="numQuantidade" >Quantidade</label>
+                <input id="numQuantidade2" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="bebida6">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade3" type="number" name="quantidade" value="0" min="0" max="9" >
+            </div>
+        </form>
+
+        <form id="frmEncomenda">
+            <div id="bebida7">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade1" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="bebida8">
+                <label for="numQuantidade" >Quantidade</label>
+                <input id="numQuantidade2" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="bebida9">
+                 <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade3" type="number" name="quantidade" value="0" min="0" max="9" >
+            </div>
+        </form> 
+        <button id="adicionaCarrinho" type="button">Adiconar ao carrinho</button>
         </div>
         <div class="wrapper">
             <div class="sidebar">

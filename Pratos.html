@@ -32,22 +32,22 @@
                 <!--Meter isto nas outras paginas -->
             </div>
             <div class="artigos">
-                <button id="grid-item"> <img src="Styles/Imgs/hot-burger-king-hd-png-9dzyCE.png" alt="Burguer" width="200" height="165"> 
+                <button id="grid-item" onclick="onionBaconBurgerLettuceInfo()"> <img src="Styles/Imgs/hot-burger-king-hd-png-9dzyCE.png" alt="Burguer" width="200" height="165"> 
                     <p id="nome">Hambúrguer MC Burguer</p>
                 </button>
-                <button id="grid-item> <img src="Styles/Imgs/baconcheese.png" alt="Sumo" width="200" height="165">
+                <button id="grid-item" onclick="royalBurgerInfo()"> <img src="Styles/Imgs/baconcheese.png" alt="Sumo" width="200" height="165">
                     <p id="nome">Cheeseburguer Bacon</p>
                 </button>
-                <button id="grid-item"> <img src="Styles/Imgs/caril.png" alt="Bacalhau" width="250" height="195"> 
+                <button id="grid-item" onclick="shrimpRisottoInfo()"> <img src="Styles/Imgs/caril.png" alt="Bacalhau" width="250" height="195"> 
                     <p id="nome">Arroz de Caril</p> 
                 </button>
-                <button id="grid-item"> <img src="Styles/Imgs/english.png" alt="Burguer" width="250" height="200"> 
+                <button id="grid-item" onclick="steakBroccoliPotatoInfo()"> <img src="Styles/Imgs/english.png" alt="Burguer" width="250" height="200"> 
                     <p id="nome">English Breakfast</p>
                 </button>
-                <button id="grid-item"> <img src="Styles/Imgs/saladafrango.png" alt="Burguer" width="240" height="190"> 
+                <button id="grid-item" onclick="chickenSaladInfo() "> <img src="Styles/Imgs/saladafrango.png" alt="Burguer" width="240" height="190"> 
                     <p id="nome">Salada de Frango</p>
                 </button>
-                <button id="grid-item"> <img src="Styles/Imgs/paella.png" alt="Sumo" width="250" height="250">
+                <button id="grid-item" onclick="paellaInfo()"> <img src="Styles/Imgs/paella.png" alt="Sumo" width="250" height="250">
                     <p id="nome">Paella</p>
                 </button>
                 <button id="grid-item"> <img src="Styles/Imgs/porco.png" alt="Bacalhau" width="250" height="200"> 
@@ -59,15 +59,55 @@
                 <button id="grid-item"> <img src="Styles/Imgs/risotto-camarao.png" alt="Sumo" width="240" height="190">
                     <p id="nome">Risotto de Camarão</p>
                 </button>
-                <button id="grid-item"> <img src="Styles/Imgs/salmon.png" alt="Bacalhau" width="235" height="235"> 
+                <button id="grid-item"  onclick="seardSalmonInfo()"> <img src="Styles/Imgs/salmon.png" alt="Bacalhau" width="235" height="235"> 
                     <p id="nome">Salmão grelhado</p> 
                 </button>
-                <button id="grid-item"> <img src="Styles/Imgs/bacalhau-com-natas.png" alt="Burguer" width="240" height="240"> 
+                <button id="grid-item" onclick="bacalhauNatasInfo()"> <img src="Styles/Imgs/bacalhau-com-natas.png" alt="Burguer" width="240" height="240"> 
                     <p id="nome">Bacalhau c/ Natas</p>
                 </button>
             </div>
         </div>
         
+        <form id="frmEncomenda">
+            <div id="prato1">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade1" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="prato2">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade2" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="prato3">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade3" type="number" name="quantidade" value="0" min="0" max="9" >
+            </div>
+            <div id="prato4">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade1" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="prato5">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade2" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="prato6">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade3" type="number" name="quantidade" value="0" min="0" max="9" >
+            </div>
+            <div id="prato7">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade1" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="prato8">
+                <label for="numQuantidade" >Quantidade</label>
+                <input id="numQuantidade2" type="number" name="quantidade" value="0" min="0" max="9">
+            </div>
+            <div id="prato9">
+                <label for="numQuantidade">Quantidade</label>
+                <input id="numQuantidade3" type="number" name="quantidade" value="0" min="0" max="9" >
+            </div>
+        </form>
+        <button id="adicionaCarrinho" type="button">Adiconar ao carrinho</button>  
+
 
         <div class="wrapper">
             <div class="sidebar">

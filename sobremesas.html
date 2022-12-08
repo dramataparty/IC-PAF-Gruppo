@@ -31,25 +31,52 @@
                 <!--Meter isto nas outras paginas -->
             </div>
             <div class="artigos">
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/apple-crumble-com-gelado.png" alt="Burguer" width="310" height="180"> 
+                <button id="grid-item" onclick="appleCrumbleInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/apple-crumble-com-gelado.png" alt="Burguer" width="310" height="180"> 
                     <p id="nome">Apple Crumble</p>
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/bolocenoura.png" alt="Sumo" width="200" height="200">
+                <button id="grid-item" onclick="carrotCakeInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/bolocenoura.png" alt="Sumo" width="200" height="200">
                     <p id="nome">Bolo de Cenoura</p>
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/cheesecake.png" alt="Bacalhau" width="270" height="240"> 
+                <button id="grid-item" onclick="cheesecakeInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/cheesecake.png" alt="Bacalhau" width="270" height="240"> 
                     <p id="nome">Cheesecake</p> 
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/creme-brulee.png" alt="Burguer" width="270" height="270"> 
+                <button id="grid-item" onclick="cremeBruleeInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/creme-brulee.png" alt="Burguer" width="270" height="270"> 
                     <p id="nome">Crème Brûlée</p>
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/mousse de chocolat.png" alt="Sumo" width="220" height="220">
+                <button id="grid-item" onclick="choclateMouseInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/mousse de chocolat.png" alt="Sumo" width="220" height="220">
                     <p id="nome">Mousse de Chocolate</p>
                 </button>
-                <button id="grid-item" class="s_salmao s_amend"> <img src="Styles/Imgs/petit-gateau.png" alt="Bacalhau" width="210" height="220"> 
+                <button id="grid-item" onclick="petitGateauInfo()" class="s_salmao s_amend"> <img src="Styles/Imgs/petit-gateau.png" alt="Bacalhau" width="210" height="220"> 
                     <p id="nome">Petit Gateau</p> 
                 </button>
             </div>
+            <form id="frmEncomenda">
+                <div id="sobremesa1">
+                    <label for="numQuantidade">Quantidade</label>
+                    <input id="numQuantidade1" type="number" name="quantidade" value="0" min="0" max="9">
+                </div>
+                <div id="sobremesa2">
+                    <label for="numQuantidade">Quantidade</label>
+                    <input id="numQuantidade2" type="number" name="quantidade" value="0" min="0" max="9">
+                </div>
+                <div id="sobremesa3">
+                    <label for="numQuantidade">Quantidade</label>
+                    <input id="numQuantidade3" type="number" name="quantidade" value="0" min="0" max="9" >
+                </div>
+                <div id="sobremesa4">
+                    <label for="numQuantidade">Quantidade</label>
+                    <input id="numQuantidade4" type="number" name="quantidade" value="0" min="0" max="9">
+                </div>
+                <div id="sobremesa5">
+                    <label for="numQuantidade">Quantidade</label>
+                    <input id="numQuantidade5" type="number" name="quantidade" value="0" min="0" max="9">
+                </div>
+                <div id="sobremesa6">
+                    <label for="numQuantidade">Quantidade</label>
+                    <input id="numQuantidade6" type="number" name="quantidade" value="0" min="0" max="9" >
+                </div>
+                </form>
+                <button id="adicionaCarrinho" type="button">Adiconar ao carrinho</button>  
         </div>
         <div class="wrapper">
             <div class="sidebar">
