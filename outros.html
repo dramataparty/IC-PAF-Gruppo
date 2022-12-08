@@ -10,11 +10,30 @@
             <div class="title">
                 <h1> Artigos para complementar a sua refeição </h1>
             </div>
+            <div class="content_filters"> 
+
+                <input type="checkbox" id = "botao_nacional" onclick="filterSelection('nacional')">>
+                <label for="botao_nacional"> Produto Nacional </label>
+
+                <input type="checkbox" id = "botao_samend" onclick="filterSelection('s_amend')">
+                <label for="botao_samend"> Sem Amendoins </label>
+                
+                <input type="checkbox" id = "botao_ssalmao" onclick="filterSelection('s_salmao')">
+                <label for="botao_ssalmao"> Sem Salmao </label>
+
+                <input type="checkbox" id = "botao_sglut" onclick="filterSelection('s_glut')">
+                <label for="botao_sglut"> Sem Glúten </label>
+
+                <input type="checkbox" id = "botao_vegan" onclick="filterSelection('vegan')">
+                <label for="botao_vegan"> Vegan </label>
+                <!--OnClick() mudam o display para ter só os elementos que pertencem á devida categoria-->
+                <!--Meter isto nas outras paginas -->
+            </div>
             <div class="artigos">
-                <button id="grid-item"" id="pratos"> <img src="Styles/Imgs/cafe.png" alt="Coffee" width="180" height="150"> 
+                <button id="grid-item" id="pratos"> <img src="Styles/Imgs/cafe.png" alt="Coffee" width="180" height="150"> 
                     <p id="nome">Café</p>
                 </button>
-                <button id="grid-item"" id="bebidas"> <img src="Styles/Imgs/jack.png" alt="Drink" width="120" height="200">
+                <button id="grid-item" id="bebidas"> <img src="Styles/Imgs/jack.png" alt="Drink" width="120" height="200">
                     <p id="nome">Jack Daniel's</p>
                 </button>
             </div>
