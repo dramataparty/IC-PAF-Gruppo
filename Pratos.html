@@ -12,38 +12,57 @@
             <div class="title">
                 <h1> O que vai comer hoje? </h1>
             </div>
+            <div class="content_filters"> 
+
+                <input type="checkbox" id = "botao_nacional" onclick="filterSelection('nacional')">>
+                <label for="botao_nacional"> Produto Nacional </label>
+
+                <input type="checkbox" id = "botao_samend" onclick="filterSelection('s_amend')">
+                <label for="botao_samend"> Sem Amendoins </label>
+                
+                <input type="checkbox" id = "botao_ssalmao" onclick="filterSelection('s_salmao')">
+                <label for="botao_ssalmao"> Sem Salmao </label>
+
+                <input type="checkbox" id = "botao_sglut" onclick="filterSelection('s_glut')">
+                <label for="botao_sglut"> Sem Glúten </label>
+
+                <input type="checkbox" id = "botao_vegan" onclick="filterSelection('vegan')">
+                <label for="botao_vegan"> Vegan </label>
+                <!--OnClick() mudam o display para ter só os elementos que pertencem á devida categoria-->
+                <!--Meter isto nas outras paginas -->
+            </div>
             <div class="artigos">
-                <button id="grid-item""> <img src="Styles/Imgs/hot-burger-king-hd-png-9dzyCE.png" alt="Burguer" width="200" height="165"> 
+                <button id="grid-item"> <img src="Styles/Imgs/hot-burger-king-hd-png-9dzyCE.png" alt="Burguer" width="200" height="165"> 
                     <p id="nome">Hambúrguer MC Burguer</p>
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/baconcheese.png" alt="Sumo" width="200" height="165">
+                <button id="grid-item> <img src="Styles/Imgs/baconcheese.png" alt="Sumo" width="200" height="165">
                     <p id="nome">Cheeseburguer Bacon</p>
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/caril.png" alt="Bacalhau" width="250" height="195"> 
+                <button id="grid-item"> <img src="Styles/Imgs/caril.png" alt="Bacalhau" width="250" height="195"> 
                     <p id="nome">Arroz de Caril</p> 
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/english.png" alt="Burguer" width="250" height="200"> 
+                <button id="grid-item"> <img src="Styles/Imgs/english.png" alt="Burguer" width="250" height="200"> 
                     <p id="nome">English Breakfast</p>
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/saladafrango.png" alt="Burguer" width="240" height="190"> 
+                <button id="grid-item"> <img src="Styles/Imgs/saladafrango.png" alt="Burguer" width="240" height="190"> 
                     <p id="nome">Salada de Frango</p>
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/paella.png" alt="Sumo" width="250" height="250">
+                <button id="grid-item"> <img src="Styles/Imgs/paella.png" alt="Sumo" width="250" height="250">
                     <p id="nome">Paella</p>
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/porco.png" alt="Bacalhau" width="250" height="200"> 
+                <button id="grid-item"> <img src="Styles/Imgs/porco.png" alt="Bacalhau" width="250" height="200"> 
                     <p id="nome">Bife de Porco</p> 
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/vaca.png" alt="Burguer" width="240" height="240"> 
+                <button id="grid-item"> <img src="Styles/Imgs/vaca.png" alt="Burguer" width="240" height="240"> 
                     <p id="nome">Bife de Vaca</p>
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/risotto-camarao.png" alt="Sumo" width="240" height="190">
+                <button id="grid-item"> <img src="Styles/Imgs/risotto-camarao.png" alt="Sumo" width="240" height="190">
                     <p id="nome">Risotto de Camarão</p>
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/salmon.png" alt="Bacalhau" width="235" height="235"> 
+                <button id="grid-item"> <img src="Styles/Imgs/salmon.png" alt="Bacalhau" width="235" height="235"> 
                     <p id="nome">Salmão grelhado</p> 
                 </button>
-                <button id="grid-item""> <img src="Styles/Imgs/bacalhau-com-natas.png" alt="Burguer" width="240" height="240"> 
+                <button id="grid-item"> <img src="Styles/Imgs/bacalhau-com-natas.png" alt="Burguer" width="240" height="240"> 
                     <p id="nome">Bacalhau c/ Natas</p>
                 </button>
             </div>
