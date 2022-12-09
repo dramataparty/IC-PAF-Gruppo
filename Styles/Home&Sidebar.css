@@ -6,6 +6,12 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+.show {
+    display: block;
+  }
+
+  
  
 .wrapper .sidebar{
     background: rgb(49, 49, 49);
@@ -246,3 +252,9 @@ body{
     background-color: rgb(206, 139, 139);
     cursor: pointer;
 }
+
+
+.artigos {
+    overflow: hidden;
+}
+
